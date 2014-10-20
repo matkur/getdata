@@ -112,6 +112,8 @@ for (i in 1:length(cNames))
     cNames[i] = gsub("-mean","Mean",cNames[i])
     cNames[i] = gsub("^(t)","time",cNames[i])
     cNames[i] = gsub("^(f)","freq",cNames[i])
+    cNames[i] = gsub("Acc","Acceleration",cNames[i])
+    cNames[i] = gsub("BodyBody","Body",cNames[i])
 }
 names(finalData)<-cNames
 

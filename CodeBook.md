@@ -55,9 +55,13 @@ Step 4. Appropriately label the data set with descriptive activity names.
 Here I use gsub function for pattern replacement to clean up the data labels:   
 * the strings "()" were dropped
 * "std" were replaced by "StdDev"
-* "mean" were replaced by "Mean""
+* "mean" were replaced by "Mean"
+* "Acc" were replaced by "Acceleration"
 * "t" in the beginning were replaced by "time"
 * "f" in the beginning were replaced by "freq"
+* In the data set there was some clumn names which included "BodyBody", and it was changed to "Body". (See Discussion forum at https://class.coursera.org/getdata-008/forum, thread "What is BodyBody on the raw variables?"
+ Started by Luis Daniel Ribeiro Louro).
+
 
 This means the following interpretation to the abbreviatons in the column names:  
 * subjectId (the test persons id)
