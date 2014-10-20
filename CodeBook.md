@@ -34,8 +34,14 @@ The following files are read into tables (data frames) in the R- script. Table n
 *	subject_test.txt (subjectTest)
 *	x_test.txt (xTest)
 *	y_test.txt (yTest)
-The column names in the xTrain and xTest tables are given from the features table and all the other tables are given descriptive column names. To the tables yTain and yTest are attached an extra column which contains the activity labels. In the script two tables are created from the source data, namely trainingData <- cbind(yTrain,subjectTrain,xTrain) and testData <- cbind(yTest,subjectTest,xTest). Finally only one table is created finalData <-  rbind(trainingData,testData)  
-
+   
+The column names in the xTrain and xTest tables are given from the features table and all the other tables are given descriptive column names. To the tables yTain and yTest are attached an extra column which contains the activity labels. In the script two tables are created from the source data, namely: 
+* trainingData <- cbind(yTrain,subjectTrain,xTrain)
+* testData <- cbind(yTest,subjectTest,xTest).
+  
+Finally only one table is created:
+* finalData <-  rbind(trainingData,testData)  
+  
 Step 2. Extract only the measurements on the mean and standard deviation for each measurement.
 ----------------------------------------------------------------------------------------------
 To select the columns from xTrain and xTest tables, I decided to take all the column names that include the strings "std" or "mean". For convenience, this step is done in script as a part of Step 1. 
