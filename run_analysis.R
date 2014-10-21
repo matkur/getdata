@@ -44,7 +44,7 @@ activityLabels = read.table('./UCI HAR Dataset/activity_labels.txt')[,2] #load a
 
 # Read the train files
 subjectTrain = read.table('./UCI HAR Dataset/train/subject_train.txt') #load subject_train.txt
-xTrain       = read.table('./UCI HAR Dataset/train/x_train.txt') #load x_train.txt
+xTrain       = read.table('./UCI HAR Dataset/train/X_train.txt') #load x_train.txt
 yTrain       = read.table('./UCI HAR Dataset/train/y_train.txt') #load y_train.txt
 
 # Read the test files
